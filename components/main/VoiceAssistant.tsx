@@ -2,23 +2,24 @@
 'use client';
 
 import React from 'react';
-import { FaMicrophone } from 'react-icons/fa';
+// import { FaMicrophone } from 'react-icons/fa';
 
 const VoiceAssistant = () => {
-  const handleMicrophoneClick = () => {
-    // Make an HTTP GET request when the microphone icon is clicked
-    fetch('https://your-link-here.com/api', {
-      method: 'GET',
-    })
-      .then((response) => {
-        // Handle the response
-        console.log('Response:', response);
-      })
-      .catch((error) => {
-        // Handle any errors
-        console.error('Error:', error);
-      });
-  };
+
+//   const handleMicrophoneClick = () => {
+//     // Make an HTTP GET request when the microphone icon is clicked
+//     fetch('https://your-link-here.com/api', {
+//       method: 'GET',
+//     })
+//       .then((response) => {
+//         // Handle the response
+//         console.log('Response:', response);
+//       })
+//       .catch((error) => {
+//         // Handle any errors
+//         console.error('Error:', error);
+//       });
+//   };
 
   return (
     <div className="relative h-screen w-full">

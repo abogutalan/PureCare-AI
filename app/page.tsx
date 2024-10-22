@@ -1,5 +1,4 @@
 import VoiceAssistant from "@/components/main/VoiceAssistant";
-import Image from "next/image";
 
 export default function Home() {
   return (

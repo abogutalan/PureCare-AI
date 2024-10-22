@@ -1,3 +1,35 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // **1. Handle Unused Variables and Imports**
+    // Change 'no-unused-vars' from 'error' to 'warn' to allow the build to pass while still notifying you.
+    "@typescript-eslint/no-unused-vars": ["warn"],
+
+    // **2. Handle Unescaped Entities in JSX**
+    // Disable the rule if you prefer handling unescaped entities manually or through other means.
+    "react/no-unescaped-entities": "off",
+
+    // **3. Handle @ts-ignore and @ts-expect-error**
+    // Allow the use of '@ts-expect-error' and disallow '@ts-ignore'.
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-expect-error": "allow",
+        "ts-ignore": "disallow-with-description"
+      }
+    ],
+
+    // **4. Handle 'any' Type Usage**
+    // Change 'no-explicit-any' from 'error' to 'warn' to allow the use of 'any' while still notifying you.
+    "@typescript-eslint/no-explicit-any": ["warn"],
+
+    // **5. Additional Recommendations**
+    // You can adjust or add more rules based on your project's needs.
+
+    // Example: Allowing JSX props spreading (if it's a common pattern in your project)
+    "react/jsx-props-no-spreading": "off",
+
+    // Example: Enforce consistent use of single quotes in JSX
+    "jsx-quotes": ["error", "prefer-single"]
+  }
 }

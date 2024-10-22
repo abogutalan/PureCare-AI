@@ -62,7 +62,7 @@ const Navbar = () => {
               className="cursor-pointer"
               onClick={handleClick}
             >
-              Click here and let's talk!
+              Please click here to talk!
             </a>
             <a href="#projects" className="cursor-pointer">
               {/* Projects */}
